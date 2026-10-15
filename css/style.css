@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-left: 5px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#maps-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#maps-inputs {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+#maps-inputs input {
+    padding: 5px;
+}
+
+#maps-inputs button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#maps-inputs button:hover {
+    background-color: #1b5e20;
+}
+
+#maps-inputs button:active {
+    background-color: #0abd13;
+}
+
+#maps-view {
+    width: 100%;
+    height: 50vh;
+    background-color: lightgrey;
+}
+

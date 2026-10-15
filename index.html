@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapa-interativo-unifor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="maps-section">
+        
+        <h1>Mapa Interativo: Encontre os Pontos Escondidos!</h1>
+
+        <div id="maps-inputs">
+
+            <label for="latitude">Latitude:</label>
+            <input type="text" name="latitude" id="latitude">
+
+            <label for="longitude">Longitude:</label>
+            <input type="text" name="longitude" id="longitude">
+
+            <label for="nome-marcador">Nome do marcador:</label>
+            <input type="text" name="nome-marcador" id="nome-marcador">
+
+            <button id="btn-adicionar">
+                Adicionar ponto
+            </button>
+
+
+        </div>
+
+        <div id="maps-view">
+
+            <!-- Eu usaria um iframe para mostrar o mapa do google maps aqui? -->
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async" defer></script>
+</body>
+
+</html>
