@@ -57,10 +57,16 @@ header {
     color: white;
 }
 
+#header-links a[aria-current="page"] {
+    border-bottom: 3px solid white;
+    font-weight: bold;
+}
+
 #header-links a:hover {
     transition: 0.2s;
     background-color: rgb(7, 13, 97);
 }
+
 
 /* Centralização das duas seções da main */
 
