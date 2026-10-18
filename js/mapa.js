@@ -1,10 +1,7 @@
-const nomeMarcador = document.getElementById("nome")
-const latitude = document.getElementById("latitude");
-const longitude = document.getElementById("longitude");
 const mapView = document.getElementById("main-maps");
 
 let map;
-let center = { lat: -3.768794699943584, lng: -38.48063257153242 };
+const center = { lat: parseFloat(mapView.dataset.lat), lng: parseFloat(mapView.dataset.lng) };
 
 function initMap() {
     map = new google.maps.Map(mapView, {
@@ -14,9 +11,9 @@ function initMap() {
     });
 
     addMarker(
-        parseFloat(center.lat),
-        parseFloat(center.lng),
-        "Biblioteca"
+        center.lat,
+        center.lng,
+        mapView.dataset.titulo
     );
 }
 

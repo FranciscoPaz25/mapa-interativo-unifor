@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,14 @@
             <p>Unifor Maps</p>
         </div>
 
-        <div id="header-links">
+        <nav id="header-links">
             <a href="index.html">Home</a>
             <a href="./pages/nep.html">NEP</a>
             <a href="./pages/cc.html">CC</a>
             <a href="./pages/biblioteca.html">Biblioteca</a>
             <a href="./pages/academia.html">Academia</a>
             <a href="./pages/natacao.html">Natação</a>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -50,13 +50,18 @@
 
         <section class="main-section">
             <div id="main-border">
-                <div id="main-maps"></div>
+                <div 
+                    id="main-maps" 
+                    data-lat="-3.7687837789857697" 
+                    data-lng="-38.47807455502943"
+                    data-titulo="Unifor">
+                </div>
             </div>
         </section>
     </main>
 
-
-    <script src="home.js" defer></script>
+    <script src="./js/mapa.js" defer></script>
+    <script src="./js/home.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=marker&loading=async" defer></script>
 </body>
 </html>
