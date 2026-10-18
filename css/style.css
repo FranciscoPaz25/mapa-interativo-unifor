@@ -62,13 +62,73 @@ header {
     background-color: rgb(7, 13, 97);
 }
 
-/* Centralização da seção da main */
+/* Centralização das duas seções da main */
 
-#main-section {
+.main-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/* inputs da primeira seção */
+
+#main-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px;
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    gap: 10px;
+    color: white;
+    background-color: rgb(12, 23, 180);
+    text-align: center;
+}
+
+#main-inputs h1 {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+#main-inputs input {
+    width: 50%;
+    padding: 10px;
+    border-style: none; 
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(25, 39, 230);
+}
+
+#main-inputs label {
+    font-size: 17px;
+}
+
+#main-inputs button {
+    width: 25%;
+    margin-top: 15px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(25, 39, 230);
+    font-size: 17px;
+}
+
+#main-inputs button a {
+    text-decoration: none;
+    color: white;
+}
+
+#main-inputs button:hover {
+    transition: 0.2s;
+    background-color: rgb(7, 13, 97);
+}
+
+#main-inputs button:active {
+    background-color: rgb(10, 88, 235);
 }
 
 /* Definição do mapa para a segunda seção */
@@ -77,11 +137,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     padding: 20px;
     width: 60%;
     height: 80%;
     background-color: rgb(12, 23, 180);
+    margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 10px;
 }
