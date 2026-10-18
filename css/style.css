@@ -121,10 +121,6 @@ header {
     border-radius: 20px;
     background-color: rgb(25, 39, 230);
     font-size: 17px;
-}
-
-#main-inputs button a {
-    text-decoration: none;
     color: white;
 }
 

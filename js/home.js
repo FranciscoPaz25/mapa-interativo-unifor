@@ -9,5 +9,8 @@ btnAdicionar.addEventListener("click", function () {
         parseFloat(longitude.value),
         nomeMarcador.value
     );
+
+    // mapView vem do mapa.js
+    mapView.scrollIntoView({ behavior: "smooth" });
 });
 
